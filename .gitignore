@@ -1,0 +1,20 @@
+# Real dispatch audio and reference transcripts: addresses, patient detail. Never commit.
+corpus/
+*.wav
+*.flac
+*.mp3
+*.ogg
+
+# Model weights (multi-GB, downloaded)
+models/
+*.safetensors
+*.gguf
+*.onnx
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# Claude Code worktrees (scoped, not all of .claude/)
+.claude/worktrees/
