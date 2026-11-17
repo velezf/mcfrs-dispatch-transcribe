@@ -15,6 +15,8 @@ Decisions so far:
   control-channel grants and affiliations with dispatch transcripts to
   infer units per incident; learn radio-ID → unit names from transcripts;
   ignore encrypted talkgroups' metadata.
+- `docs/adr/0004-system-context.md` (PROPOSED): this repo's role; the
+  canonical system map is `mcfrs-incidents/docs/adr/0002-system-architecture.md`.
 
 ## Blocked on
 
