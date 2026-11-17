@@ -2,7 +2,8 @@
 
 ## Status (2026-11-17)
 
-Repo created; planning only. No code, no corpus, no GitHub remote yet.
+Repo created; planning only. No code, no corpus. Public on GitHub
+(`velezf/mcfrs-dispatch-transcribe`).
 
 Decisions so far:
 - `docs/adr/0001-speech-to-text-engine.md` (PROPOSED): local engines only;
@@ -13,10 +14,6 @@ Decisions so far:
 
 ## Blocked on
 
-- **An 800 MHz antenna on the dongle.** The small antenna on it now heard
-  nothing (2026-11-17, `mcfrs-scanner/docs/adr/0002-over-the-air-dispatch-data.md`).
-  The roof J-pole worked on 2026-09-02. No corpus can be recorded until one
-  is back.
 - **`mcfrs-scanner` per-call audio tap** (its `docs/PLAN.md`, phase 7 step 2).
 
 ## Next steps
@@ -26,11 +23,11 @@ Decisions so far:
 2. Not blocked, needs a go-ahead (installs software on `apogee-gs`): build
    antirez `qwen-asr` with OpenBLAS, download the P25 fine-tune, confirm it
    loads, time it on a test clip.
-3. Once there is an antenna: record and hand-transcribe 20–30 dispatches into
+3. Record and hand-transcribe 20–30 dispatches into
    `corpus/`, then run the bake-off (ADR 0001, Decision).
 4. Write the dispatch event format (this repo is its authority) once the
    bake-off shows which fields are reliable.
 
 ## Open branches
 
-None (no commits yet).
+None.
