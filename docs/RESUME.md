@@ -11,6 +11,10 @@ Decisions so far:
   Qwen3-ASR-0.6B stock and the trunk-reporter P25 fine-tune; scoring method.
 - `docs/adr/0002-phase2-vocoder-parameter-asr.md` (DEFERRED): no Phase II
   vocoder-parameter model for now; revisit triggers listed.
+- `docs/adr/0003-control-channel-metadata.md` (PROPOSED): fuse
+  control-channel grants and affiliations with dispatch transcripts to
+  infer units per incident; learn radio-ID → unit names from transcripts;
+  ignore encrypted talkgroups' metadata.
 
 ## Blocked on
 
@@ -27,6 +31,9 @@ Decisions so far:
    `corpus/`, then run the bake-off (ADR 0001, Decision).
 4. Write the dispatch event format (this repo is its authority) once the
    bake-off shows which fields are reliable.
+5. ADR 0003 next steps: verify OP25 logs `0x28` affiliations; replay the
+   fusion rules offline on a control-channel log plus hand-transcribed
+   dispatches; decide on a second dongle from the measured gaps.
 
 ## Open branches
 
