@@ -14,7 +14,8 @@ Gates, TDD and commit format: `~/.claude/CLAUDE.md`. Cross-project conventions
 
 Authorities for literal values:
 - **This repo** owns the dispatch event format (not yet written).
-- **Box facts** (host, RAM, ports in use): `mcfrs-scanner/CLAUDE.md`.
+- **Box facts** (host, RAM): `mcfrs-scanner/CLAUDE.md`. **Ports in use:** `~/code/CLAUDE.md`
+  "Shared hardware: the Pis".
 - **Talkgroups:** `mcfrs-scanner/config/mcfrs.tsv`.
 - **Call types and unit nomenclature:** `mcfrs-incidents/api/mcfrs_api/parsers/`.
 
